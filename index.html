@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Help Page</title>
+    <link rel="stylesheet" href="output.css" />
+    <style>
+      input[type="text"] {
+        width: 100%;
+        border: 2px solid black;
+        border-radius: 4px;
+        margin: 8px 0;
+        outline: none;
+        padding: 8px;
+        box-sizing: border-box;
+        transition: 0.3s;
+        height: 50px;
+      }
+
+      input[type="text"]:focus {
+        border-color: dodgerBlue;
+        box-shadow: 0 0 8px 0 dodgerBlue;
+      }
+    </style>
+  </head>
+  <body>
+    <nav
+      class="flex flex-col md:flex-row justify-between items-center p-4 bg-black text-white gap-4"
+    >
+      <div class="flex items-center gap-4">
+        <img
+          src="../logos/logo_white.png"
+          alt="logo of the company"
+          class="w-[50px] h-auto"
+        />
+        <p class="text-3xl font-cname">Marseven</p>
+        <p>|</p>
+        <p>Help Center</p>
+      </div>
+      <div class="flex flex-col sm:flex-row items-center gap-4">
+        <button
+          type="submit"
+          class="bg-slate-700 text-white p-2 border border-white rounded-lg hover:bg-white hover:text-black hover:border-black transition duration-300"
+        >
+          Submit a request
+        </button>
+        <button
+          type="submit"
+          class="bg-blue-700 px-4 py-2 rounded-lg text-white hover:bg-white hover:text-blue-700 transition duration-300"
+        >
+          Sign in
+        </button>
+      </div>
+    </nav>
+
+    <main
+      class="bg-blue-300 flex flex-col w-full h-96 justify-center items-center px-4 text-center"
+    >
+      <p class="text-4xl md:text-5xl font-roboto mb-4">How can we help?</p>
+      <input
+        type="text"
+        placeholder="Search"
+        class="w-full max-w-md border-2 border-black rounded-lg p-3 outline-none transition-all duration-300 focus:border-dodgerBlue focus:shadow-lg"
+      />
+    </main>
+    <div
+      class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mx-auto max-w-6xl p-4"
+    >
+      <!-- Each Grid Item -->
+      <div
+        class="flex gap-x-6 p-4 items-center cursor-pointer hover:shadow-lg transition-shadow duration-300"
+      >
+        <img src="../images/branches.png" alt="Branches logo" class="w-20" />
+        <div>
+          <p class="font-bold">Branches</p>
+          <p>
+            Abstract lets you manage, version, and document your designs in one
+            place.
+          </p>
+          <p class="text-blue-500 hover:underline">Learn More →</p>
+        </div>
+      </div>
+      <div
+        class="flex gap-x-6 p-4 items-center cursor-pointer hover:shadow-lg transition-shadow duration-300"
+      >
+        <img src="../images/account.png" alt="Account logo" class="w-20" />
+        <div>
+          <p class="font-bold">Manage your account</p>
+          <p>
+            Configure your account settings, such as your email, profile
+            details, and password.
+          </p>
+          <p class="text-blue-500 hover:underline">Learn More →</p>
+        </div>
+      </div>
+      <div
+        class="flex gap-x-6 p-4 items-center cursor-pointer hover:shadow-lg transition-shadow duration-300"
+      >
+        <img
+          src="../images/manage.png"
+          alt="Manage account logo"
+          class="w-20"
+        />
+        <div>
+          <p class="font-bold">Manage organizations, teams, and projects</p>
+          <p>
+            Use Abstract organizations, teams, and projects to organize your
+            people and your work.
+          </p>
+          <p class="text-blue-500 hover:underline">Learn More →</p>
+        </div>
+      </div>
+      <div
+        class="flex gap-x-6 p-4 items-center cursor-pointer hover:shadow-lg transition-shadow duration-300"
+      >
+        <img src="../images/billing.png" alt="Billing logo" class="w-20" />
+        <div>
+          <p class="font-bold">Manage billing</p>
+          <p>Change subscriptions and payment details.</p>
+          <p class="text-blue-500 hover:underline">Learn More →</p>
+        </div>
+      </div>
+      <div
+        class="flex gap-x-6 p-4 items-center cursor-pointer hover:shadow-lg transition-shadow duration-300"
+      >
+        <img src="../images/key.png" alt="Authentication logo" class="w-20" />
+        <div>
+          <p class="font-bold">Authenticate to Abstract</p>
+          <p>Set up and configure SSO, SCIM, and Just-in-Time provisioning.</p>
+          <p class="text-blue-500 hover:underline">Learn More →</p>
+        </div>
+      </div>
+      <div
+        class="flex gap-x-6 p-4 items-center cursor-pointer hover:shadow-lg transition-shadow duration-300"
+      >
+        <img src="../images/chat.png" alt="Chat logo" class="w-20" />
+        <div>
+          <p class="font-bold">Abstract support</p>
+          <p>Get in touch with a human.</p>
+          <p class="text-blue-500 hover:underline">Learn More →</p>
+        </div>
+      </div>
+    </div>
+
+    <footer
+      class="flex flex-col md:flex-row w-full border-t border-black justify-around mt-8 pt-4 pb-4 text-white bg-black gap-6 px-4"
+    >
+      <div>
+        <p class="text-lg font-bold">Marseven</p>
+        <ul>
+          <li><a href="#" class="hover:underline">Start Trial</a></li>
+          <li><a href="#" class="hover:underline">Pricing</a></li>
+          <li><a href="#" class="hover:underline">Download</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="text-lg font-bold">Resources</p>
+        <ul>
+          <li><a href="#" class="hover:underline">Blog</a></li>
+          <li><a href="#" class="hover:underline">Help Center</a></li>
+          <li><a href="#" class="hover:underline">Release Notes</a></li>
+          <li><a href="#" class="hover:underline">Status</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="text-lg font-bold">Community</p>
+        <ul>
+          <li><a href="#" class="hover:underline">Twitter</a></li>
+          <li><a href="#" class="hover:underline">LinkedIn</a></li>
+          <li><a href="#" class="hover:underline">Facebook</a></li>
+          <li><a href="#" class="hover:underline">Dribble</a></li>
+          <li><a href="#" class="hover:underline">Podcast</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="text-lg font-bold">Company</p>
+        <ul>
+          <li><a href="#" class="hover:underline">About Us</a></li>
+          <li><a href="#" class="hover:underline">Career</a></li>
+          <li><a href="#" class="hover:underline">Legal</a></li>
+        </ul>
+        <p class="text-lg font-bold mt-4">Contact Us</p>
+        <a href="mailto:#" class="hover:underline">info@marseven.com</a>
+      </div>
+      <div class="text-center">
+        <img src="../logos/logo_black.png" alt="Company logo" width="50px" />
+        <p class="mt-2">&copy; Copyright 2024</p>
+        <p>Marseven, Inc.</p>
+        <p class="mb-4">All rights reserved</p>
+        <button
+          type="submit"
+          class="bg-blue-700 px-4 py-2 rounded-lg text-white hover:bg-white hover:text-blue-700 transition duration-300"
+        >
+          Help
+        </button>
+      </div>
+    </footer>
+  </body>
+</html>
