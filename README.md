@@ -8,9 +8,12 @@ Just a simple and responsive help-page layout layout
 **Desktop View:** 
 
 
+![Desktop_view_screenshot](https://github.com/user-attachments/assets/5562e6e2-6472-43dc-ae9f-54299ff35fbd)
+
 
 **Mobile View:**
 
+![Mobile_view_screensshot](https://github.com/user-attachments/assets/13c05206-d1f5-45a9-a3a9-2fff80b97870)
 
 
 **Key Features:**
